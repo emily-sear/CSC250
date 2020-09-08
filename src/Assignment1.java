@@ -1,33 +1,41 @@
+import java.util.Scanner;
+
 public class Assignment1
 {
 		public static void main(String[] args)
 		{
-			String s = "Galations";
+			Scanner scanner = new Scanner(System.in);
+			
+			System.out.println("This program checks for vowels in a word.\nPlease enter word.");
+			String s = scanner.nextLine();
+			
 			int count = 0;
 			for(int i = 0; i < s.length(); i++)
 			{
-				if(s.charAt(i) == 'a' || s.charAt(i) == 'A')
+				String letter = "" + s.charAt(i);
+				
+				if(letter.equalsIgnoreCase("a"))
 				{
 					count++;
 				}
-				else if(s.charAt(i) == 'e' || s.charAt(i) == 'E')
+				else if(letter.equalsIgnoreCase("e"))
 				{
 					count++;
 				}
-				else if(s.charAt(i) == 'i' || s.charAt(i) == 'I')
+				else if(letter.equalsIgnoreCase("i"))
 				{
 					count++;
 				}
-				else if(s.charAt(i) == 'o' || s.charAt(i) == 'O')
+				else if(letter.equalsIgnoreCase("o"))
 				{
 					count++;
 				}
-				else if(s.charAt(i) == 'u' || s.charAt(i) == 'U')
+				else if(letter.equalsIgnoreCase("u"))
 				{
 					count++;
 				}
 			}
-			System.out.println("You have " + count + " vowels in " + s);
+			System.out.println("There is " + count + " vowels in the word, " + s);
 			
 		}
 
