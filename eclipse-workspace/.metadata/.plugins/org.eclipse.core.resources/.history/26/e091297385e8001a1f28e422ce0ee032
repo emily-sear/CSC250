@@ -1,0 +1,10 @@
+
+public class Driver
+{
+	public static void main(String[] args)
+	{
+		System.out.println("hello world!");
+		System.out.print("Yo what is up my dudes");
+		System.out.print("la la la");
+	}
+}
