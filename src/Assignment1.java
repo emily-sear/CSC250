@@ -4,11 +4,20 @@ public class Assignment1
 {
 		public static void main(String[] args)
 		{
-			Scanner scanner = new Scanner(System.in);
+			//allows for you to not have to use try and catch everytime you want to read something in 
+			//from the user
+			
+			Scanner input = new Scanner(System.in);
 			
 			System.out.println("This program checks for vowels in a word.\nPlease enter word.");
-			String s = scanner.nextLine();
+			String s = input.nextLine();
 			
+			//could use index of
+			//String vowels = "aeiouAEIOU";
+			//for(int i = 0; i < s.length(); i++):
+				
+			//{ if(vowels.indexOf(s.charAt(i)) != -1)
+			//{ count++}}
 			int count = 0;
 			for(int i = 0; i < s.length(); i++)
 			{
@@ -36,6 +45,7 @@ public class Assignment1
 				}
 			}
 			System.out.println("There is " + count + " vowels in the word, " + s);
+			input.close();
 			
 		}
 
